@@ -1,0 +1,10 @@
+<form [formGroup]="addMovieForm">
+  <div>
+    <label for="name">Name</label>
+    <input formControlName="name" />
+
+    <label for="description">Description</label>
+    <input formControlName="description" />
+  </div>
+  <button type="button" (click)="addMovie()" mat-raised-button color="primary">Salvar</button>
+</form>
